@@ -2,12 +2,43 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>EcoTrack</title>
+  <title>EcoTrack - Waste Management System</title>
   <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="EcoTrack - A brutalist waste management system">
+  <meta name="theme-color" content="#2d5a3d">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="EcoTrack">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="icons/icon-192x192.png">
+
+  <!-- Import system fonts with @font-face fallbacks for GeistMono and universalSans -->
+  <style>
+    @font-face {
+      font-family: 'GeistMono';
+      src: url('https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-mono-regular.woff2') format('woff2');
+      font-weight: 300;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'GeistMono';
+      src: url('https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-mono-regular.woff2') format('woff2');
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    /* Fallback to system fonts if custom fonts fail */
+    :root {
+      --font-geist-mono: 'GeistMono', ui-monospace, SFMono-Regular, 'Roboto Mono', Menlo, Monaco, 'Liberation Mono', 'DejaVu Sans Mono', monospace;
+      --font-universal-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+    }
+  </style>
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
-<body>
+<body class="bg-xai-dark text-text-primary font-universal-sans">
   <app-root></app-root>
+  <noscript>Please enable JavaScript to continue using this application.</noscript>
 </body>
 </html>

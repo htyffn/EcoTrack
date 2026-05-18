@@ -1,1 +1,142 @@
-/* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+/* Global xAI Design System Styles */
+
+@layer base {
+  body {
+    @apply bg-xai-dark text-text-primary font-universal-sans;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-universal-sans;
+  }
+
+  /* Focus ring for accessibility */
+  *:focus-visible {
+    @apply outline-none ring-2 ring-focus/50;
+  }
+}
+
+@layer components {
+  /* Button Styles */
+  .btn-primary {
+    @apply bg-xai-white text-xai-dark font-geist-mono font-semibold uppercase tracking-button
+           px-6 py-3 rounded-none border-0 cursor-pointer
+           hover:bg-white/90 transition-colors
+           disabled:opacity-50 disabled:cursor-not-allowed;
+    font-size: 0.875rem;
+    line-height: 1.43;
+  }
+
+  .btn-ghost {
+    @apply bg-transparent text-xai-white font-geist-mono font-semibold uppercase tracking-button
+           px-6 py-3 rounded-none border border-border-strong cursor-pointer
+           hover:bg-surface-hover transition-colors
+           disabled:opacity-50 disabled:cursor-not-allowed;
+    font-size: 0.875rem;
+    line-height: 1.43;
+  }
+
+  .btn-text {
+    @apply bg-transparent text-xai-white font-universal-sans
+           cursor-pointer
+           hover:text-text-tertiary transition-colors
+           disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  /* Form Styles */
+  .form-input,
+  .form-select,
+  .form-textarea {
+    @apply w-full bg-transparent border border-border-default rounded-none
+           text-xai-white
+           px-4 py-3 font-universal-sans text-body
+           transition-colors
+           hover:border-border-strong
+           focus:border-border-strong focus:ring-1 focus:ring-focus/50;
+  }
+
+  .form-input::placeholder,
+  .form-select::placeholder,
+  .form-textarea::placeholder {
+    @apply text-text-quaternary;
+  }
+
+  .form-label {
+    @apply block text-text-secondary font-universal-sans text-body-sm mb-2;
+  }
+
+  /* Card Styles */
+  .card {
+    @apply bg-surface-subtle border border-border-default rounded-none
+           p-6 transition-colors
+           hover:border-border-strong;
+  }
+
+  /* Badge/Tag Styles */
+  .badge {
+    @apply inline-block bg-transparent border border-border-strong rounded-none
+           px-2 py-1 font-geist-mono text-small uppercase tracking-badge
+           text-xai-white;
+  }
+
+  /* Error Message */
+  .error-message {
+    @apply block text-red-400 text-small mt-1;
+  }
+
+  /* Success Message */
+  .success-message {
+    @apply bg-green-900/20 border border-green-500/50 text-green-300
+           rounded-none p-4 text-body;
+  }
+
+  /* Section Container */
+  .section-container {
+    @apply max-w-7xl mx-auto;
+  }
+
+  /* Header Styles */
+  .page-header {
+    @apply text-center mb-12 md:mb-20;
+  }
+
+  .page-header h1 {
+    @apply font-geist-mono text-3xl md:text-5xl font-light tracking-tight
+           text-xai-white mb-4;
+  }
+
+  .page-header p {
+    @apply text-text-secondary text-lg;
+  }
+}
+
+/* Dropdown options: unselected = white bg + dark text, selected = dark bg + white text */
+select option {
+  background-color: #ffffff;
+  color: #1f2228;
+}
+
+select option:hover {
+  background-color: #1f2228;
+  color: #ffffff;
+}
+
+/* Scrollbar Styling for xAI aesthetic */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-xai-dark;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-border-strong rounded-none;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-border-strong/80;
+}

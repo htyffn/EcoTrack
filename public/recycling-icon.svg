@@ -1,0 +1,23 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" width="200" height="200">
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="95" fill="#ffffff" stroke="#2d5a3d" stroke-width="2"/>
+
+  <!-- Recycling symbol - three arrows forming a triangle -->
+  <!-- Arrow 1 (top-right) -->
+  <g transform="translate(100, 100)">
+    <!-- Arrow 1: pointing to top-right -->
+    <path d="M 35 -15 L 50 -40 L 45 -40 Q 65 -50 75 -30 L 60 -15 Z" fill="#10b981"/>
+    <path d="M 0 0 L 35 -15 Q 40 -20 50 -30" stroke="#2d5a3d" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Arrow 2: pointing to bottom-left -->
+    <path d="M -50 35 L -75 50 L -70 40 Q -85 45 -85 20 L -60 10 Z" fill="#10b981"/>
+    <path d="M 0 0 L -50 35 Q -55 40 -65 45" stroke="#2d5a3d" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Arrow 3: pointing to bottom-right -->
+    <path d="M 50 35 L 75 50 L 70 40 Q 85 45 85 20 L 60 10 Z" fill="#10b981"/>
+    <path d="M 0 0 L 50 35 Q 55 40 65 45" stroke="#2d5a3d" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Center circle -->
+  <circle cx="100" cy="100" r="8" fill="#2d5a3d"/>
+</svg>

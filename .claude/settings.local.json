@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(bun add *)",
+      "Bash(bun run *)",
+      "Bash(npx cap *)",
+      "PowerShell(Get-Command *)",
+      "PowerShell(Remove-Item *)",
+      "Bash(tar -tzf \"node_modules/@capacitor/cli/assets/android-template.tar.gz\")",
+      "PowerShell(cmd /c \"dir /s /b C:\\\\Users\\\\htyff\\\\Desktop\\\\DAM2\\\\ivan\\\\EcoTrack\\\\android\" | Select-Object -First 20)",
+      "PowerShell(cd \"C:\\\\Users\\\\htyff\\\\Desktop\\\\DAM2\\\\ivan\\\\EcoTrack\"; $dest = Resolve-Path \"android\"; tar -xzf \"node_modules\\\\@capacitor\\\\cli\\\\assets\\\\capacitor-cordova-android-plugins.tar.gz\" --directory=$dest 2>&1; Write-Host \"Exit: $LASTEXITCODE\")",
+      "PowerShell(cmd /c \"dir /s /b C:\\\\Users\\\\htyff\\\\Desktop\\\\DAM2\\\\ivan\\\\EcoTrack\\\\android\\\\capacitor-cordova-android-plugins\" 2>&1 | Select-Object -First 10)",
+      "PowerShell(cmd /c \"dir /b C:\\\\Users\\\\htyff\\\\Desktop\\\\DAM2\\\\ivan\\\\EcoTrack\\\\android\" 2>&1)",
+      "PowerShell(cmd /c \"dir /b C:\\\\Users\\\\htyff\\\\Desktop\\\\DAM2\\\\ivan\\\\EcoTrack\\\\android\\\\app\\\\src\\\\main\\\\assets\\\\public\" 2>&1 | Select-Object -First 5)",
+      "PowerShell(cd \"C:\\\\Users\\\\htyff\\\\Desktop\\\\DAM2\\\\ivan\\\\EcoTrack\"; $androidAbs = Resolve-Path \"android\"; tar -xzf \"node_modules\\\\@capacitor\\\\cli\\\\assets\\\\android-template.tar.gz\" --directory=$androidAbs build.gradle 2>&1; Write-Host \"Exit: $LASTEXITCODE\")"
+    ]
+  }
+}
